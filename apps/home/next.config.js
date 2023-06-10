@@ -22,7 +22,7 @@ const nextConfig = {
         remotes: remotes(options.isServer),
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
-          './nav': './pages/components/nav.tsx'
+          './nav': './components/nav.tsx'
         }
       })
     )
