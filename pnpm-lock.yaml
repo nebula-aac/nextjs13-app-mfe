@@ -47,8 +47,8 @@ importers:
   apps/docs:
     dependencies:
       '@module-federation/nextjs-mf':
-        specifier: ^6.5.1
-        version: 6.5.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0)
+        specifier: 6.5.2-rc3.1
+        version: 6.5.2-rc3.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0)
       '@types/node':
         specifier: 20.2.5
         version: 20.2.5
@@ -363,6 +363,31 @@ packages:
       webpack-sources: 3.2.3
     dev: false
 
+  /@module-federation/nextjs-mf@6.5.2-rc3.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0):
+    resolution: {integrity: sha512-kq1hU/rD7WMmsTkbHoNBeVyPMUZ7rhbLh9EipQ+XQrR/bRbr/GpXpKzTcf8Gf+wq9L8YtCM4UFYKvKPDTFXg6w==}
+    peerDependencies:
+      next: ^12 || ^13
+      react: ^17 || ^18
+      react-dom: ^17 || ^18
+      styled-jsx: '*'
+      webpack: ^5.40.0
+    peerDependenciesMeta:
+      styled-jsx:
+        optional: true
+    dependencies:
+      '@module-federation/node': 0.15.2-rc3.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0)
+      '@module-federation/utilities': 1.8.2-rc3.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0)
+      encoding: 0.1.13
+      eventemitter3: 5.0.1
+      fast-glob: 3.2.12
+      next: 13.4.4(react-dom@18.2.0)(react@18.2.0)
+      node-fetch: 2.6.9(encoding@0.1.13)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      webpack: 5.86.0(webpack-cli@5.1.4)
+      webpack-sources: 3.2.3
+    dev: false
+
   /@module-federation/node@0.12.2(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0):
     resolution: {integrity: sha512-eh2hq5cx92S7S1Y9Vp/OVpbzEmWhiBIcSWaUf9kUqyjNpH5pzMgh9cX6Etp2hn63OFv2SaYvZ84h0rqrf/C7VA==}
     peerDependencies:
@@ -385,6 +410,31 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       webpack: 5.86.0(webpack-cli@5.1.4)
+    dev: false
+
+  /@module-federation/node@0.15.2-rc3.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0):
+    resolution: {integrity: sha512-UEHTAZ89bwqK2ozxQbhx7kBWzG9zdfoQYI6PDk7LIxJTcTaNSabGpq8+oxJKuet76FWZDQuy4kctNvu7GX9iDA==}
+    peerDependencies:
+      next: ^12||^13
+      react: ^16||^17||^18
+      react-dom: ^16||^17||^18
+      webpack: ^5.40.0
+    peerDependenciesMeta:
+      next:
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@module-federation/utilities': 1.8.2-rc3.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0)
+      encoding: 0.1.13
+      next: 13.4.4(react-dom@18.2.0)(react@18.2.0)
+      node-fetch: 2.6.11(encoding@0.1.13)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      webpack: 5.86.0(webpack-cli@5.1.4)
+      webpack-sources: 3.2.3
     dev: false
 
   /@module-federation/utilities@1.4.0(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0):
@@ -427,6 +477,28 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       webpack: 5.86.0(webpack-cli@5.1.4)
+    dev: false
+
+  /@module-federation/utilities@1.8.2-rc3.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.86.0):
+    resolution: {integrity: sha512-SviGbqB8604hbaAgJD9rhZgE7tl3RQlHqmaMf+EgST4EI2Ik9YxxK+lDbmWPYZnkdk3Gpwv73dpuU8UY6qobxA==}
+    peerDependencies:
+      next: ^12 || ^13
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+      webpack: ^5.40.0
+    peerDependenciesMeta:
+      next:
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      next: 13.4.4(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      webpack: 5.86.0(webpack-cli@5.1.4)
+      webpack-sources: 3.2.3
     dev: false
 
   /@next/env@13.4.4:
@@ -2380,6 +2452,19 @@ packages:
 
   /node-fetch@2.6.7(encoding@0.1.13):
     resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      encoding: 0.1.13
+      whatwg-url: 5.0.0
+    dev: false
+
+  /node-fetch@2.6.9(encoding@0.1.13):
+    resolution: {integrity: sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==}
     engines: {node: 4.x || >=6.0.0}
     peerDependencies:
       encoding: ^0.1.0
