@@ -1,3 +1,4 @@
+'use client'
 import Button from "@/components/button/button";
 import RemoteFormComponent from "@/components/form/form";
 import { Fragment } from "react";
