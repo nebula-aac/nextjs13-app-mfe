@@ -1,3 +1,7 @@
+import Container from "@/components/container/container";
+import Hero from "@/components/sections/hero/hero";
+import Main from "@/components/sections/main/main";
+import { Text } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import { Fragment } from "react";
 
@@ -23,62 +27,14 @@ const RemoteTitle = dynamic(
 export default function Home() {
   return (
     <Fragment>
-      <div>
-        <div className="hero">
-          <RemoteTitle />
-          <h1>Welcome to Next.js <code>Home</code></h1>
-          <p className="description">
-            To get started, edit <code>pages/index.tsx</code> and save to reload.
-          </p>
-        </div>
-      </div>
-
-      <style jsx>{`
-        .hero {
-          width: 100%;
-          color: #333;
-        }
-        .title {
-          margin: 0;
-          width: 100%;
-          padding-top: 80px;
-          line-height: 1.15;
-          font-size: 48px;
-        }
-        .title,
-        .description {
-          text-align: center;
-        }
-        .row {
-          max-width: 880px;
-          margin: 80px auto 40px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        }
-        .card {
-          padding: 18px 18px 24px;
-          width: 220px;
-          text-align: left;
-          text-decoration: none;
-          color: #434343;
-          border: 1px solid #9b9b9b;
-        }
-        .card:hover {
-          border-color: #067df7;
-        }
-        .card h3 {
-          margin: 0;
-          color: #067df7;
-          font-size: 18px;
-        }
-        .card p {
-          margin: 0;
-          padding: 12px 0 0;
-          font-size: 13px;
-          color: #333;
-        }
-      `}</style>
+      <Container height={"100vh"}>
+        <Hero />
+        <Main>
+          <Text color="text">
+            To get started, edit <code>pages/index.tsx</code>. Save to reload.
+          </Text>
+        </Main>
+      </Container>
     </Fragment>
   )
 }
