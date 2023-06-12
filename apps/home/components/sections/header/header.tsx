@@ -1,6 +1,6 @@
 import { Link } from "@chakra-ui/next-js";
 import { Box, Flex, Text } from "@chakra-ui/react";
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 
 const links = [
     { href: "https://vercel.com/home", label: "Vercel.sh" },
@@ -9,7 +9,14 @@ const links = [
     return { ...link, key: `nav-link-${index}` };
 });
 
-const MenuItems = (props) => {
+type MenuItemsProps = {
+    children?: React.ReactNode
+    isLast?: boolean
+    to?: string | undefined
+    href?: string | undefined
+}
+
+const MenuItems = (props: MenuItemsProps) => {
     const { children, isLast, to = "/", ...rest } = props
     return (
         <Text
@@ -25,7 +32,7 @@ const MenuItems = (props) => {
     )
 }
 
-export default function Header(props) {
+export default function Header(props: any) {
     const [show, setShow] = useState<boolean>(false)
     return (
         <Fragment>
