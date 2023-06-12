@@ -1,4 +1,4 @@
-const deps = require('../package.json').dependencies;
+const deps = require('./package.json').dependencies;
 const NextFederationPlugin = require('@module-federation/nextjs-mf');
 
 const remotes = (isServer) => {
