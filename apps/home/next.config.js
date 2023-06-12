@@ -1,3 +1,4 @@
+const deps = require('../package.json').dependencies;
 const NextFederationPlugin = require('@module-federation/nextjs-mf');
 
 const remotes = (isServer) => {
@@ -28,6 +29,28 @@ const nextConfig = {
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
           './nav': './components/sections/header/header.tsx'
+        },
+        shared: {
+          '@chakra-ui/react': {
+            singleton: true,
+            requiredVersion: deps['@chakra-ui/react']
+          },
+          '@chakra-ui/next-js': {
+            singleton: true,
+            requiredVersion: deps['@chakra-ui/next-js']
+          },
+          '@emotion/react': {
+            singleton: true,
+            requiredVersion: deps['@emotion/react']
+          },
+          '@emotion/styled': {
+            singleton: true,
+            requiredVersion: deps['@emotion/styled']
+          },
+          'framer-motion': {
+            singleton: true,
+            requiredVersion: deps['framer-motion']
+          }
         }
       })
     )
