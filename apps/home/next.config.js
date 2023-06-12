@@ -55,6 +55,10 @@ const nextConfig = {
             eager: true,
             singleton: true,
             requiredVersion: deps['framer-motion']
+          },
+          'react/jsx-runtime': {
+            eager: true,
+            singleton: true
           }
         }
       })
