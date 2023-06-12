@@ -32,22 +32,27 @@ const nextConfig = {
         },
         shared: {
           '@chakra-ui/react': {
+            eager: true,
             singleton: true,
             requiredVersion: deps['@chakra-ui/react']
           },
           '@chakra-ui/next-js': {
+            eager: true,
             singleton: true,
             requiredVersion: deps['@chakra-ui/next-js']
           },
           '@emotion/react': {
+            eager: true,
             singleton: true,
             requiredVersion: deps['@emotion/react']
           },
           '@emotion/styled': {
+            eager: true,
             singleton: true,
             requiredVersion: deps['@emotion/styled']
           },
           'framer-motion': {
+            eager: true,
             singleton: true,
             requiredVersion: deps['framer-motion']
           }
