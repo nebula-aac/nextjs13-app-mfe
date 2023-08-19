@@ -23,8 +23,8 @@ importers:
         specifier: ^11.11.0
         version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.9)(react@18.2.0)
       '@module-federation/nextjs-mf':
-        specifier: ^6.5.1
-        version: 6.5.1(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.88.2)
+        specifier: ^7.0.8
+        version: 7.0.8(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)(webpack@5.88.2)
       '@types/node':
         specifier: 20.2.5
         version: 20.2.5

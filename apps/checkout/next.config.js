@@ -4,9 +4,7 @@ const remotes = (isServer) => {
   const location = isServer ? "ssr" : "chunks"
   return {
     checkout: `checkout@https://nextjs13-app-mfe.vercel.app/_next/static/${location}/remoteEntry.js`,
-    // home: `home@http://localhost:3001/_next/static/${location}/remoteEntry.js`,
     home: `home@https://nextjs13-app-mfe-so6z.vercel.app/_next/static/${location}/remoteEntry.js`,
-    // shop: `shop@http://localhost:3002/_next/static/${location}/remoteEntry.js`,
     shop: `shop@https://nextjs13-app-mfe-7veq.vercel.app/_next/static/${location}/remoteEntry.js`,
   }
 }
